@@ -24,7 +24,7 @@ git clone https://github.com/Atharv029/Pipe-Firestarter-Storage-Guide && cd Pipe
 chmod +x ./Pipe_Firestarter.sh
 ./Pipe_Firestarter.sh
 ```
-- If this is your first time running it, the script will install required dependencies.
+- If this is your first time running it, the script will install required dependencies so click Y.
 - During installation, some files will open; copy the text from them and save for later use.
 - Make sure to copy your **Solana public key**, as you will need it for the faucet.
 
