@@ -101,14 +101,13 @@ install_pipe() {
         exit 1
     fi
     
-    # Setup password
     echo "🔑 Set a strong password for your Pipe account:"
     if ! pipe set-password; then
         echo "❌ Failed to set password"
         exit 1
     fi
     
-    # Save credentials
+  
     echo "📄 Opening credentials file for review..."
     if [ -f "$CREDENTIALS_FILE" ]; then
         echo "📋 Your credentials file is located at: $CREDENTIALS_FILE"
@@ -133,14 +132,14 @@ install_pipe() {
         read -p "Press Enter to continue..." 
     fi
     
-    # Create install flag
+   
     touch "$INSTALL_FLAG"
     echo ""
     echo "🎉 Installation Completed! Run the script again for menu options."
     echo "📋 Remember to backup your credentials from: $CREDENTIALS_FILE"
 }
 
-# Function: Validate file exists
+
 validate_file() {
     local file_path="$1"
     if [ ! -f "$file_path" ]; then
@@ -150,7 +149,7 @@ validate_file() {
     return 0
 }
 
-# Function: Menu operations
+
 menu() {
     # Check if pipe command is available
     if ! command_exists pipe; then
@@ -243,18 +242,9 @@ menu() {
     done
 }
 
-# ==============================
-# Main Logic
-# ==============================
 
-# Check if running as root
-#if [ "$EUID" -eq 0 ]; then
-#    echo "⚠️ This script should not be run as root (except for package installation)"
-#    echo "Please run as a regular user."
-#    exit 1
-#fi 
 
-# Check if bc is available for number validation
+
 if ! command_exists bc; then
     echo "📦 Installing bc for number validation..."
     sudo apt install -y bc
