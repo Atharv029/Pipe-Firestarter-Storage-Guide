@@ -50,6 +50,13 @@ chmod +x ./Pipe_Firestarter.sh
    - Provide the **full path** of the file and a **file name** to save it.
    - Only after swapping SOL for PIPE can you upload files.
 
+## Upload File Format
+
+Here’s an example of how your upload file should look:
+
+![Upload File Format](https://github.com/user-attachments/assets/63c8a411-55d1-4dc5-84ac-7401f7a2fc35)
+
+
 3. **Check PIPE Token Usage**
    - See your PIPE token usage and rewards.
 
