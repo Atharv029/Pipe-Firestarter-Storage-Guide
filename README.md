@@ -15,7 +15,8 @@ In short, Firestarter gives developers and users a full-stack decentralized alte
 
 ### Step 1: Clone the repository
 ```bash
-git clone https://github.com/Atharv029/Pipe-Firestarter-Storage-Guide
+git clone https://github.com/Atharv029/Pipe-Firestarter-Storage-Guide && cd Pipe-Firestarter-Storage-Guide
+
 ```
 
 ### Step 2: Run the installation script
