@@ -58,7 +58,7 @@ Here’s an example of how your upload file should look:
 
 
 3. **Check PIPE Token Usage**
-   - See your PIPE token usage and rewards.
+   - See your PIPE token usage
 
 4. **Check Credentials**
    - View your saved credentials if needed.
